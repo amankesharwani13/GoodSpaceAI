@@ -1,19 +1,22 @@
-import React from "react";
+import React, {useState}from "react";
 import { NavLink } from "react-router-dom";
 import { CgMenu, CgCloseR } from "react-icons/cg";
 import { Button } from "./styles/Button";
 import "./styles/Navbar.scss";
 
 const Navbar = () => {
+  const [openMenu, setOpenMenu] = useState(false);
 
   return (
     <>
-      <div className="navbar">
+    <div className="navbar">
+      <div className={openMenu ? "menuIcon active" : "menuIcon"}>
           <ul className="navbar-list">
             <li>
               <NavLink
                 className="navbar-link"
-                to=""
+                onClick={() => setOpenMenu(false)}
+                to="/"
               >
                 Blogs
               </NavLink>
@@ -21,7 +24,8 @@ const Navbar = () => {
             <li>
               <NavLink
                 className="navbar-link"
-                to=""
+                onClick={() => setOpenMenu(false)}
+                to="/feature"
               >
                 Features
               </NavLink>
@@ -29,7 +33,8 @@ const Navbar = () => {
             <li>
               <NavLink
                 className="navbar-link"
-                to=""
+                onClick={() => setOpenMenu(false)}
+                to="/pricing"
               >
                 Pricing
               </NavLink>
@@ -37,7 +42,8 @@ const Navbar = () => {
             <li>
               <NavLink
                 className="navbar-link"
-                to=""
+                onClick={() => setOpenMenu(false)}
+                to="/integrations"
               >
                 Integrations
               </NavLink>
@@ -57,6 +63,7 @@ const Navbar = () => {
             />
           </div>
       </div>
+    </div>
     </>
   );
 };
