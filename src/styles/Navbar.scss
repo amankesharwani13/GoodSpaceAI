@@ -45,11 +45,11 @@ $helper-color: rgba(203, 213, 225, 0.1);
     display: none;
   }
 
-  @media (max-width: 768px) { 
+  @media (max-width: 768px) {
     .mobile-navbar-btn {
       display: inline-block;
-      z-index: 999;
-      border: $black;
+      border: none; 
+      background: none; 
 
       .mobile-nav-icon {
         font-size: 3.2rem;
@@ -60,7 +60,7 @@ $helper-color: rgba(203, 213, 225, 0.1);
     .navbar-list {
       width: 100vw;
       height: 100vh;
-      position: absolute;
+      position: fixed; 
       top: 0;
       left: 0;
       background-color: #fff;
@@ -72,18 +72,19 @@ $helper-color: rgba(203, 213, 225, 0.1);
       transform: translateX(100%);
       visibility: hidden;
       opacity: 0;
+      z-index: 99; 
+    }
 
-      li {
-        .navbar-link {
-          &:link,
-          &:visited {
-            font-size: 2.5rem;
-          }
+    li {
+      .navbar-link {
+        &:link,
+        &:visited {
+          font-size: 2.5rem;
+        }
 
-          &:hover,
-          &:active {
-            color: $helper-color;
-          }
+        &:hover,
+        &:active {
+          color: $helper-color;
         }
       }
     }
@@ -92,11 +93,10 @@ $helper-color: rgba(203, 213, 225, 0.1);
       .mobile-nav-icon {
         display: none;
         font-size: 4.2rem;
-        position: absolute;
+        position: fixed;
         top: 3%;
         right: 10%;
         color: $black;
-        z-index: 9999;
       }
 
       .close-outline {
@@ -107,8 +107,8 @@ $helper-color: rgba(203, 213, 225, 0.1);
         visibility: visible;
         opacity: 1;
         transform: translateX(0);
-        z-index: 999;
       }
     }
   }
 }
+
