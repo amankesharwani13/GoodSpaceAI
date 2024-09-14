@@ -1,12 +1,12 @@
-// import Feature from "./Feature";
 import Home from "./Home";
-// import Hotjar from "./Hotjar";
-// import Integrations from "./Integrations";
+import Integrations from "./Integrations";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./GlobalStyle";
+import Feature from "./Feature";
+
 
 const App = () => {
   const theme = {
@@ -36,7 +36,12 @@ const App = () => {
       <GlobalStyle />
       <BrowserRouter>
         <Header />
-        <Home/>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/feature" element={<Feature />} />
+          <Route path="/pricing" element={<Footer />} />
+          <Route path="/integrations" element={<Integrations />} />
+        </Routes>
         <Footer />
       </BrowserRouter>
     </ThemeProvider>
