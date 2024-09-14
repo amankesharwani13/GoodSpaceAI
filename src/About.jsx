@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import SecondSection from "./components/SecondSection";
+import SecondSection from "./SecondSection";
 
 const About = () => {
 
