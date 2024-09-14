@@ -6,8 +6,8 @@ import "./styles/SecondSection.scss";
 const SecondSection = () => {
   return (
     <div className="wrapper">
-      <hr color="gray"></hr>
-        <div>
+      {/* <hr color="gray"></hr> */}
+        <div className="hello">
           <div className="section-second-data">
             <p className="second-top-data">The World's Most Configurable</p>
             <h1 className="second-top-data1">
