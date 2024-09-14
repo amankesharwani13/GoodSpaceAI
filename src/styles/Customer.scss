@@ -1,0 +1,114 @@
+$bg-color: rgba(203, 213, 225, 0.1);
+$travel-bg-color: rgba(227, 240, 249, 1);
+$gradient-start: #2D56EC;
+$gradient-end: #1AACEA;
+
+$theme-media-tab: 768px; 
+$theme-media-mobile: 480px; 
+
+.wrapper {
+  font-family: Arial, sans-serif;
+  background-color: $bg-color;
+  padding: 0;
+
+  h2 {
+    margin: -125px 0px 0px 0px;
+    padding: 100px 0 45px;
+    background: linear-gradient(93.69deg, $gradient-start -14.13%, $gradient-end 120.91%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .lin0 {
+    margin: 15px 0 0;
+  }
+
+  .line1 {
+    margin: 30px 20px 0 165px;
+  }
+
+  .line2 {
+    margin: 0 5px 0 30px;
+  }
+
+  .line3 {
+    margin: 30px 10px 0 45px;
+  }
+
+  .btnname {
+    display: flex;
+    justify-content: center;
+    padding: 0 3px;
+    margin: 0;
+  }
+
+  #name {
+    padding-right: 80px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    color: rgb(169, 169, 169);
+  }
+
+  #email {
+    padding-right: 200px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    color: rgb(169, 169, 169);
+  }
+
+  .below {
+    display: flex;
+    justify-content: center;
+    margin: 0 3px 0 0;
+    padding: 0 0 50px;
+  }
+
+  .below img {
+    margin: 19px;
+    width: 6px;
+    height: 8px;
+  }
+
+  .travel {
+    margin: 128px 0 0;
+    background: $travel-bg-color;
+
+    h2 {
+      margin: 0 0 35px;
+      padding: 54px 0 0;
+      background: linear-gradient(93.69deg, $gradient-start -14.13%, $gradient-end 120.91%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+  }
+
+  @media (max-width: $theme-media-tab) {
+  }
+
+  @media (max-width: $theme-media-mobile) {
+    .lin0 img {
+      display: none;
+    }
+    .line1{
+        display: none;
+    }
+    .line2{
+        display: none;
+    }
+    .line3{
+        display: none;
+    }
+    .travel {
+      display: none;
+    }
+
+    h2 {
+      display: none;
+    }
+  }
+
+}

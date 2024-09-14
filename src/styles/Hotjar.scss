@@ -1,0 +1,38 @@
+$theme-media-tab: 768px;
+$theme-media-mobile: 480px;
+
+$bg-color: rgba(203, 213, 225, 0.1);
+
+.wrapper {
+  font-family: Arial, sans-serif;
+  background-color: $bg-color;
+
+  .fourth {
+    img {
+      margin-left: 24rem;
+      margin-top: -24rem;;
+    }
+  }
+
+  @media (max-width: $theme-media-tab) {
+    
+  }
+
+  @media (max-width: $theme-media-mobile) {
+    .grid-two-column,
+    .grid-three-column {
+      grid-template-columns: 1fr;
+    }
+
+    .fourth {
+      img {
+        width: 1004px;
+        margin-left: -324px;
+        margin-bottom: 130px;
+        margin-top: -140px;
+        border-top-style: hidden;
+        border-top-color: rgba(203, 213, 225, 0);
+      }
+    }
+  }
+}

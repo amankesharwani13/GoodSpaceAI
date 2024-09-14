@@ -1,0 +1,22 @@
+$media-mobile: 768px;
+
+.mainheader {
+  padding: 2rem 4.5rem;
+  margin: 0px 0px -120px 0px;
+  background-color: rgb(237, 238, 240);
+  height: 6rem;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    height: auto;
+    max-width: 100%;
+  }
+
+  @media (max-width: $media-mobile) {
+    margin: 0px 0px -95px -19px;
+  }
+}
+

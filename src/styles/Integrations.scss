@@ -1,0 +1,71 @@
+$bg-color: rgba(227, 240, 249, 1);
+$heading-color: rgba(45, 86, 236, 1);
+$gradient-start: #2D56EC;
+$gradient-end: #1AACEA;
+
+$theme-media-tab: 768px; 
+$theme-media-mobile: 480px; 
+
+.wrapper1 {
+  padding: 5rem 0;
+  background: $bg-color;
+  font-family: Arial, sans-serif;
+
+  .line {
+    margin: -15px 0px 0px 350px;
+  }
+
+  .line0 {
+    margin: -35px 0px 30px 0px;
+  }
+
+  .line1 {
+    margin: 0px 0px 0px 170px;
+  }
+
+  .line2 {
+    margin: 0px 0px 0px 50px;
+  }
+
+  .line3 {
+    margin: 0px 0px 0px 50px;
+  }
+
+  h2 {
+    color: $heading-color;
+    font-size: 4.2rem;
+    background: linear-gradient(93.69deg, $gradient-start -14.13%, $gradient-end 120.91%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: -10px 0px 0px 0px;
+  }
+
+  @media (max-width: $theme-media-tab) {
+    // Add any specific styles for tablet view if needed
+  }
+
+  @media (max-width: $theme-media-mobile) {
+    .line {
+      display: none;
+    }
+
+    .line1 {
+      margin: 60px 40px 30px 10px;
+      padding: 0;
+      width: 339px;
+    }
+
+    .line2 {
+      margin: 0px 40px 30px 10px;
+      padding: 0;
+      width: 339px;
+    }
+
+    .line3 {
+      margin: 0px 40px -20px 10px;
+      padding: 0;
+      width: 339px;
+    }
+  }
+}
