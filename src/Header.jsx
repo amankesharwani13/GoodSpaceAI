@@ -11,6 +11,7 @@ const Header = () => {
         </NavLink>
         <Navbar />
       </div>
+      <hr color="gray"></hr>
     </>
   );
 };
